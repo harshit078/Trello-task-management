@@ -10,13 +10,12 @@ interface TaskCardProps {
 
 export const TaskCard: React.FC<TaskCardProps> = ({ task, onDelete }) => {
   const [{ isDragging }, drag] = useDrag({
-    type: 'task',
+    type: "task",
     item: { _id: task._id },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
   });
-
 
   return (
     <div
@@ -26,7 +25,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onDelete }) => {
       }`}
     >
       <div className="flex justify-between items-center">
-        <h4 className="font-medium text-lg text-[#606060] cursor-pointer" >
+        <h4 className="font-medium text-lg text-[#606060] cursor-pointer">
           {task.title}
         </h4>
         <span
