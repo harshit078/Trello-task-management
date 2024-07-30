@@ -9,6 +9,13 @@
 - Task categorization with status and priority
 - Responsive design for mobile and desktop
 
+## Images 
+<img width="1792" alt="Screenshot 2024-07-31 at 12 18 36 AM" src="https://github.com/user-attachments/assets/621429d8-e8d7-4abd-b130-8bd3ef7d3a62">
+
+<img width="1788" alt="Screenshot 2024-07-31 at 12 18 03 AM" src="https://github.com/user-attachments/assets/1b48654e-00ba-4c67-8ea5-52785884237b">
+
+<img width="1791" alt="Screenshot 2024-07-31 at 12 18 09 AM" src="https://github.com/user-attachments/assets/6eb61e5a-502e-4b4d-b654-50f2a10b55aa">
+
 ### Backend Setup
 
 1. **Cd into the folder**:
