@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { TaskModal } from "@/components/TaskModal";
-import { Todocolumn } from "@/components/TodoColumn";
+import { TodoColumn } from "@/components/TodoColumn";
 import { Task, useTasks } from "@/contexts/TaskContext";
 
 const Board: React.FC = () => {
-  const { tasks, updateTask, fetchTasks, loading, error } = useTasks();
+  const { tasks, updateTask, fetchTasks, loading, error, deleteTask } =
+    useTasks();
   const [showModal, setShowModal] = useState(false);
   const [statusText, setStatusText] = useState("");
 
@@ -31,7 +32,7 @@ const Board: React.FC = () => {
   return (
     <div className="grid grid-cols-4 gap-4 bg-white p-4 rounded-md">
       {statuses.map((status) => (
-        <Todocolumn
+        <TodoColumn
           key={status}
           status={status}
           tasks={tasks?.filter((task) => task.status === status)}
@@ -40,6 +41,7 @@ const Board: React.FC = () => {
             setStatusText(status);
             setShowModal(true);
           }}
+          onDelete={deleteTask}
         />
       ))}
       {showModal && (
