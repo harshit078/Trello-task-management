@@ -14,7 +14,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
   description,
 }) => {
   return (
-    <div className="p-4 bg-white rounded-lg flex flex-row items-center gap-2">
+    <div className="p-6 bg-white rounded-lg flex flex-row text-lg items-center shadow-md gap-2">
       <Image src={imageSrc} alt={altText} width={77} height={61} />
       <div className="flex flex-col">
         <h3 className="text-md text-[#757575] font-semibold">{title}</h3>

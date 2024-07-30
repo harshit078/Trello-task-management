@@ -23,7 +23,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ toggleModal }) => {
   const { logout, user } = useAuth();
 
   return (
-    <aside className="w-64 p-4 min-h-screen h-full bg-white shadow-md border-r flex flex-col">
+    <aside className="w-70 p-4 min-h-screen h-full bg-white shadow-md border-r flex flex-col">
       <div className="flex mt-5">
         <UserCircleIcon className="h-9 w-9 mx-1 text-gray-500" />
         <h2 className="text-xl mt-1 font-medium">
@@ -50,30 +50,30 @@ export const Sidebar: React.FC<SidebarProps> = ({ toggleModal }) => {
         </button>
       </div>
 
-      <nav className="mt-4 mb-2">
-        <ul>
-          <li className="p-3 bg-[#F4F4F4] rounded border border-gray-300 cursor-pointer flex items-center">
-            <HomeIcon className="h-6 w-6 mr-3  text-gray-500" />
-            Home
-          </li>
-          <li className="p-3 cursor-pointer flex items-center">
-            <ChartBarIcon className="h-6 w-6 mr-3  text-gray-500" />
-            Boards
-          </li>
-          <li className="p-3 cursor-pointer flex items-center">
-            <CogIcon className="h-6 w-6 mr-3  text-gray-500" />
-            Settings
-          </li>
-          <li className="p-3 cursor-pointer flex items-center">
-            <UserGroupIcon className="h-6 w-6 mr-3  text-gray-500" />
-            Teams
-          </li>
-          <li className="p-3 cursor-pointer flex items-center">
-            <ChartBarIcon className="h-6 w-6 mr-3  text-gray-500" />
-            Analytics
-          </li>
-        </ul>
-      </nav>
+            <nav className="mt-4 mb-2">
+                <ul>
+                    <li className="p-3  rounded-md  hover:bg-gray-300 cursor-pointer flex items-center">
+                    <HomeIcon className="h-6 w-6 mr-3  text-gray-500" />
+                        Home
+                    </li>
+                    <li className="p-3 rounded-md mt-3 hover:bg-gray-300 cursor-pointer flex items-center">
+                    <ChartBarIcon className="h-6 w-6 mr-3  text-gray-500" />
+                        Boards
+                    </li>
+                    <li className="p-3 rounded-md mt-3 hover:-gray-300 cursor-pointer flex items-center">
+                    <CogIcon className="h-6 w-6 mr-3  text-gray-500" />
+                        Settings
+                    </li>
+                    <li className="p-3  rounded-md mt-3 hover:bg-gray-300 cursor-pointer flex items-center">
+                    <UserGroupIcon className="h-6 w-6 mr-3  text-gray-500" />
+                        Teams
+                    </li>
+                    <li className="p-3  rounded-md mt-3 mb-3 hover:bg-gray-300 cursor-pointer flex items-center">
+                    <ChartBarIcon className="h-6 w-6 mr-3  text-gray-500" />
+                        Analytics
+                    </li>
+                </ul>
+            </nav>
 
       <Button
         text="Create new task"

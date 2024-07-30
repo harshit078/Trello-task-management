@@ -84,13 +84,16 @@ export default function Dashboard() {
         </section>
 
         <div className="flex items-center justify-between my-6">
-          <div className="flex items-center border border-gray-300 bg-white rounded-lg p-1 w-[250px]">
+          <div className="flex items-center border border-gray-300 rounded-lg px-4 py-2 bg-white shadow-md">
+            <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
             <input
               type="text"
               placeholder="Search"
-              className="p-2 outline-none w-full"
+              className="flex-1 outline-none ml-2"
             />
-            <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
+            <button type="submit" hidden>
+              Search
+            </button>
           </div>
           <div className="flex items-center space-x-5">
             <LightButton
