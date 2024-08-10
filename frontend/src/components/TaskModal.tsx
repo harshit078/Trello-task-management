@@ -106,9 +106,6 @@ export const TaskModal: React.FC<TaskModalProps> = ({
             <button className="hover:bg-gray-200  flex px-3 py-2 text-gray-600 rounded-md bg-[#F4F4F4] r">
               <p>Share</p>
               <ShareIcon
-                onClick={() => {
-                  onClose();
-                }}
                 className="h-6 w-6 ml-2"
               />
             </button>
